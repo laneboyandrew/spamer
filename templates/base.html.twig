@@ -2,11 +2,39 @@
 <html>
     <head>
         <meta charset="UTF-8">
-        <title>{% block title %}Welcome!{% endblock %}</title>
+        <title>{% block title %}EgeRf{% endblock %}</title>
         {% block stylesheets %}{% endblock %}
     </head>
     <body>
         {% block body %}{% endblock %}
+        <style type="text/css">
+            .sign {
+                align-content: center;
+                text-align: center;
+                border: 1px solid #333; /* Параметры рамки */
+                padding: 7px; /* Поля внутри блока */
+                margin: 10px 0 5px 5px; /* Отступы вокруг */
+                background-color: powderblue;
+                color: rgba(0,0,0,0.6);
+                text-shadow: 2px 8px 6px rgba(0,0,0,0.2),
+                0px -5px 35px rgba(255,255,255,0.3);
+
+            }
+            .sign figcaption{
+                text-align: center;
+            }
+
+            .sign1{
+
+            }
+        </style>
+        <figure class="sign">
+        <img class="sign1" src="{{
+        absolute_url(asset(
+            'https://c7.hotpng.com/preview/639/508/901/bengal-cat-british-shorthair-ragdoll-turkish-angora-kitten-cat-tongue.jpg')) }}"
+             width="500" height="500" alt="Serega"/>
+            <h1><figcaption>Welcome to Symfony</figcaption></h1>
+        </figure>
         {% block javascripts %}{% endblock %}
     </body>
 </html>
