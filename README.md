@@ -71,13 +71,6 @@ php -r "echo password_hash('ThePassword', PASSWORD_BCRYPT, ['cost' => 13]) . PHP
   * To clear volumes: `docker volume rm $(docker volume ls -q)`
   * To clear networks: `docker network rm $(docker network ls | tail -n+2 | awk '{if($2 !~ /bridge|none|host/){ print $1 }}')`
 
-#S3 ACCESS 
-    
-     Link: "https://mc.s3.syndev.ru"
-     
-    AccessKey: "1PPVM5833KTFWKV9QGLH" 
-    SecretKey: "BHt6A3nSqTiiWfnrmHGoCGG/AKt+GZNRanAGgNbq"
-
 Disclaimer: This project has been generated on phpdocker.io
 
 #Rabbit in kubernetes 
