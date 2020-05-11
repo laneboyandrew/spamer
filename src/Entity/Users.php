@@ -33,6 +33,11 @@ class Users implements UserInterface
      */
     private $email;
 
+    /**
+     * @ORM\Column(type="string", length=255)
+     */
+    private $phoneNumber;
+
     public function getId()
     {
         return $this->id;
@@ -86,4 +91,20 @@ public function eraseCredentials()
 {
 
 }
+
+    /**
+     * @return mixed
+     */
+    public function getPhoneNumber()
+    {
+        return $this->phoneNumber;
+    }
+
+    /**
+     * @param mixed $phoneNumber
+     */
+    public function setPhoneNumber($phoneNumber): void
+    {
+        $this->phoneNumber = $phoneNumber;
+    }
 }

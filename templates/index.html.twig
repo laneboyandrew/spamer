@@ -1,0 +1,18 @@
+{#{% extends 'base.html.twig' %}#}
+
+<head>
+    <meta charset="UTF-8">
+    <title>{% block title %} PHP Phone Verification with Twilio {% endblock %}</title>
+    <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/4.0.0/css/bootstrap.min.css">
+    {% block stylesheets %}
+        <link rel="stylesheet" href="{{ asset('css/style.css') }}">
+    {% endblock %}
+</head>
+
+{% block body %}
+    <form action="/api/v2/send_code" method="get" id="form1">
+        <label for="phone">Phone Number:</label>
+        <input type="text" id="phone" name="phone"><br><br>
+    </form>
+    <button type="submit" form="form1" value="Submit">Submit</button>
+{% endblock %}

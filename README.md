@@ -76,3 +76,6 @@ Disclaimer: This project has been generated on phpdocker.io
 #Rabbit in kubernetes 
     https://rabbit-rc-1582.c3.syndev.ru
     pass in SymfonyJwtAndAuth/.helm/values.yaml
+    
+    #https://ok.ru/dk?st.cmd=anonymRegistrationEnterPhone - одноклассники 1 минута КД
+    
